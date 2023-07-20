@@ -11,7 +11,17 @@
   <button onclick="processString()">Process</button>
   <p id="result"></p>
 
-  <!-- Load the backend JavaScript file -->
-  <script src="backend.js"></script>
+  <script>
+    function processString() {
+      // Get the input string from the user
+      var inputString = document.getElementById("inputString").value;
+
+      // Process the input string (you can modify this as per your requirements)
+      var processedString = inputString.toUpperCase();
+
+      // Display the processed result
+      document.getElementById("result").textContent = "Processed String: " + processedString;
+    }
+  </script>
 </body>
 </html>
